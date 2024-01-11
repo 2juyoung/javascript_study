@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 인자 */
+        // 01
+        function get_arguments1(arg) {
+            return arg;
+        }
+        alert(get_arguments1(1));
+        alert(get_arguments1(2));
+
+        // 02 - 복수의 인자
+        function get_arguments2(arg1, arg2) { // 매개변수 : parameter, 값을 받는 변수
+            return arg1 + arg2; // 개념 : 출력, 호출
+        }
+        alert(get_arguments2(10, 20)); // 인자 : arguments
+        alert(get_arguments2(20, 30)); // 값자체, 개념 : 입력
+
+
+        /* 함수를 정의하는 다른 방법 */
+        // 01
+        numbering1 = function() {
+            i = 0;
+            while(i < 10) {
+                document.write(i);
+                i += 1;
+            }
+        }
+        numbering1();
+
+        // 02 : 익명함수
+        (function () {
+            i = 0;
+            while(i < 10) {
+                document.write(i);
+                i += 1;
+            }
+        })();
+    </script>
+</body>
+</html>
