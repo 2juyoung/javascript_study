@@ -7,17 +7,30 @@
 </head>
 <body>
     <script>
+        // 오름차순 ascending order
         const arr = [7, 3, 400, 10];
 
         arr.sort((a,b) => a-b);
 
+        console.log(arr);     
+
+        // sort() 함수 : 문자열로 정렬한다.
+        // 예 : [10, 3, 400, 7]
+        arr.sort();
+
         console.log(arr);
 
-        const arr2 = [6, 4, 300, 20];
+        // 비교 함수 compare function는 양수, 음수 또는 0이 반환된다.
+        // 양수 positive, 음수 negative
 
-        arr2.sort((a,b) => a-b);
+        arr.sort((a,b) => a < b);
 
-        console.log(arr2);
+        console.log(arr);
+
+        // 내림차순 reverse order
+        arr.sort((a,b) => b - a);
+
+        console.log(arr);
     </script>
 </body>
 </html>
